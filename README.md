@@ -9,3 +9,7 @@
 # Trello
 
 * I have created a Trello at which I manage the project, please find it at [this link](https://trello.com/b/6rfrciPX/custom-emu-cpu).
+
+# Additional Documentation
+
+* Additional documentation about various features, structures, and implementations can be found in the `docs` folder.
