@@ -46,6 +46,11 @@
 * ir
 * Contains current opcode to be decoded
 
+## Program Counter
+
+* pc
+* Contains the current byte which the ir contains
+
 # Memory Registers
 
 ## Basic Memory Register
