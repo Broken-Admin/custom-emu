@@ -41,12 +41,12 @@
 
 * Bits 4 to 7 are always naught or zero.
 
-## Instruction register
+## Instruction register - 8 bit
 
 * ir
 * Contains current opcode to be decoded
 
-## Program Counter
+## Program Counter - 8 bit
 
 * pc
 * Contains the current byte which the ir contains

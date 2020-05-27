@@ -17,6 +17,7 @@ public:
     byte *flag_register = (byte *)malloc(sizeof(byte));
     byte *instruction_register = (byte *)malloc(sizeof(byte));
     byte *rl_register = (byte *)malloc(sizeof(byte));
+    byte *pc_register = (byte *)malloc(sizeof(byte));
 
     // Constructor to initialize values and allocate memory
     alr88()
