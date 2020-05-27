@@ -2,12 +2,19 @@
 
 * Each instruction takes at least 1 byte, or 8 bits
 
+* Placeholders
+    - `r` - Any general-purpose register
+    - `n` - Any 8-bit immediate number value
+
+* Formatting
+    - Immediate hex code value should be formatted with a leading `$` | E.g. `$0A` , `$FF` 
+    - Immediate binary values should be formatted with a leading `%` | E.g. `%10101100` , `%00001111` 
+
 ## Loads - 8-bit
 
 * `ldx r` operations
     - Basic load operations
     - Does not update flags
-    - `r` being any 8-bit general purpose register
 
 * `lda r` 
     - load `r` into the accumulator or the `a` register
@@ -17,6 +24,29 @@
 
 * `ldc r` 
     - load `r` into the general-purpose `c` register
+
+* `ldr n` 
+    - load immediate value `n` into register `'r'` 
+
+## Logical Operations - 8-bit
+
+#### Logical operations store to the accumulator, or the " `a` register"
+
+#### If no `r` register is specified, defaults to perform the logical operation upon the `a` register
+
+#### Updates the zero flag
+
+* `and r/n` 
+    - perform a logical `and` with the `a` register and register `'r'` or immediate value `n` 
+
+* `or r/n` 
+    - perform a logical `or` with the `a` register and register `'r'` or immediate value `n` 
+
+* `xor r/n` 
+    - perform a logical `xor` with the `a` register and register `'r'` or immediate value `n` 
+
+* `not r/n` 
+    - perform a logical `not` with the `'r'` register or immediate value `n` 
 
 # OpCodes
 
@@ -39,4 +69,4 @@
 | Ex  |       |       |       |       |       |       |       |       |       |    |    |    |    |    |    |    |
 |  Fx |       |       |       |       |       |       |       |       |       |    |    |    |    |    |    |    |
 
-[Update the table (https://www.tablesgenerator.com/markdown_tables)
+[Update the table](https://www.tablesgenerator.com/markdown_tables)
