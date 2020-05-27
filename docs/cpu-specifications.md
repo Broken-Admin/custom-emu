@@ -32,6 +32,7 @@
 * Implement general purpose 8 bit registers
 * Basic memory and registers
 * General standard for opcodes and their decoding
+* Loading of ROM machinecode
 
 ### Future
 
@@ -43,5 +44,7 @@
 * Labels
 * Jumping to labels
 * Conditional jumps dealing with flags
+* VGA graphics handling of some type
+* Support of sprites
 
 ## To-Do: Additional Documentation
