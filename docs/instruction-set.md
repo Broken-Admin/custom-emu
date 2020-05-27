@@ -14,11 +14,11 @@
 
 * `ldb r` 
     - load `r` into the general-purpose `b` register
-    - `r` being any 8 bit general purpose register, or the accumulator
+    - `r` being any 8 bit general purpose register
 
 * `ldc r` 
     - load `r` into the general-purpose `c` register
-    - `r` being any 8 bit general purpose register, or the accumulator
+    - `r` being any 8 bit general purpose register
 
 # OpCodes
 

@@ -10,6 +10,8 @@
 
 ## 8 Bit Registers
 
+* a
+    - also used for ALU arithmetic operations
 * b
 * c
 
