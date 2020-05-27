@@ -79,7 +79,7 @@
 * Contains the bottom of the stack, the highest value address.
 * Will be default valued and read-only when accessed.
 
-# Clock Register
+# Clock (Cycle) Register
 
 * cr
 
