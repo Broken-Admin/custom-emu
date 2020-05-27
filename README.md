@@ -1,4 +1,4 @@
-# Informaiton
+# Information
 
 * This is to be a basic emulator for a custom CPU design.
 * Purely a proof-of-concept which is in no way the best practices or otherwise.
