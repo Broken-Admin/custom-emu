@@ -10,7 +10,7 @@
     - `r` being any 8-bit general purpose register
 
 * `lda r` 
-    - load `r` into the accumulator register
+    - load `r` into the accumulator or the `a` register
 
 * `ldb r` 
     - load `r` into the general-purpose `b` register
