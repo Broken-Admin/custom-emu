@@ -7,16 +7,6 @@
 // Allocate memory, 15 bytes of memory which can be addressed by the CPU
 static byte *memory = NULL;
 
-typedef class byte_register
-{
-public:
-    byte value;
-    byte_register(byte nv = byte(0x0))
-    {
-        value = nv;
-    };
-} byte_register;
-
 typedef class alr88
 {
 public:
