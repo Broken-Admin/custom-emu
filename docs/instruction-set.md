@@ -5,20 +5,20 @@
 ## Loads - 8-bit
 
 * `ldx r` operations
-* Basic load options
-* Does not update flags
+    - Basic load operations
+    - Does not update flags
 
 * `lda r` 
-* load `r` into the accumulator register
-* `r` being any 8 bit general purpose register
+    - load `r` into the accumulator register
+    - `r` being any 8 bit general purpose register
 
 * `ldb r` 
-* load `r` into the general-purpose `b` register
-* `r` being any 8 bit general purpose register, or the accumulator
+    - load `r` into the general-purpose `b` register
+    - `r` being any 8 bit general purpose register, or the accumulator
 
 * `ldc r` 
-* load `r` into the general-purpose `c` register
-* `r` being any 8 bit general purpose register, or the accumulator
+    - load `r` into the general-purpose `c` register
+    - `r` being any 8 bit general purpose register, or the accumulator
 
 # OpCodes
 
