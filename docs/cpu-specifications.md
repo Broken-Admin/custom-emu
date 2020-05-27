@@ -5,6 +5,10 @@
 
 # CPU Specifications
 
+## What is it called?
+
+* Currently it's development name is ALR88
+
 ## Explain it further?
 
 * A 8-bit CPU with 4 Bit Addressing
