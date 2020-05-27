@@ -1,4 +1,4 @@
-# About This
+# Informaiton
 
 * This is to be a basic emulator for a custom CPU design.
 * Purely a proof-of-concept which is in no way the best practices or otherwise.
@@ -8,7 +8,7 @@
 
 # Trello
 
-* I have created a Trello at which I manage the project, please find it at [this link](https://trello.com/b/6rfrciPX/custom-emu-cpu).
+* I have created a Trello at which I manage the project, find it at [this link](https://trello.com/b/6rfrciPX/custom-emu-cpu).
 
 # Additional Documentation
 
