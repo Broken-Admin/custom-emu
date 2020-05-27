@@ -50,17 +50,12 @@
 
 ## Basic Memory Register
 
-* 2 "registers" are accessible, although they are stored at the same location.
+* A 8-bit register
 
-* rw - low nibble - bits 0 to 3 - Read-Write head
-* Bit 0 specifies read-write
-* Bit 0 is reset, head will read
-* Bit 0 is set, head will write
-
-* Bits 1 to 3 are always naught or zero.
-
-* rl - highest nibble - bits 4 to 7 - Ram location
+* rl - highest nibble - bits 0 to 3 - Address in memory
 * Contains the current address to be read or written to in memory.
+
+* Bits 4 - 7 are always naught or zero.
 
 # Stack Registers
 
@@ -83,3 +78,10 @@
 
 * Contains the bottom of the stack, the highest value address.
 * Will be default valued and read-only when accessed.
+
+# Clock Register
+
+* cr
+
+* Contains the current amount of clock cycles completed during the running of the program
+* Is updated with each operation performed.
