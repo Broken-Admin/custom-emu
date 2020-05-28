@@ -30,11 +30,12 @@ public:
         *c_register = byte(0x00);
         *flag_register = byte(0x00);
         *instruction_register = byte(0x00);
+        *pc_register = byte(0x00);
         *rl_register = byte(0x00);
-    }
 
-    // Future plans for the implementation of RAM and RAM banks
-    // and the basic handling of a MBC
+        // Future plans for the implementation of RAM and RAM banks
+        // and the basic handling of a MBC
+    }
 
     // Read byte from address to destination register
     void read_byte(nibble address, byte *destination)
