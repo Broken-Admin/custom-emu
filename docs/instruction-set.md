@@ -16,17 +16,28 @@
     - Basic load operations
     - Does not update flags
 
-* `lda r` 
-    - load `r` into the accumulator or the `a` register
+    - `lda r` 
+        - load `r` into the accumulator or the general-purpose `a` register
 
-* `ldb r` 
-    - load `r` into the general-purpose `b` register
+    - `ldb r` 
+        - load `r` into the general-purpose `b` register
 
-* `ldc r` 
-    - load `r` into the general-purpose `c` register
+    - `ldc r` 
+        - load `r` into the general-purpose `c` register
 
-* `ldr n` 
-    - load immediate value `n` into register `'r'` 
+* `ldr n` operations
+    - load immediate value `n` into register given register
+    - Does not update flags
+
+    - `lda n` 
+
+        - load immediate `n` into the accumulator or the general-purpose `a` register
+
+    - `ldb n` 
+        - load immediate `n` into the general-purpose `b` register
+
+    - `ldc n` 
+        - load immediate `n` into the general-purpose `c` register
 
 ## Logical Operations - 8-bit
 
