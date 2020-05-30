@@ -2,7 +2,7 @@
 #include <stdlib.h> // malloc
 #include <stdio.h>  // file operations
 
-#define MEMORY_SIZE 8 * 15
+#define MEMORY_SIZE sizeof(byte) * 15
 
 // 4-bit addressed memory
 // Allocate memory, 15 bytes of memory which can be addressed by the CPU
@@ -42,9 +42,13 @@ public:
     u_char *load_instruction_file(const char *filename)
     {
         FILE *f = fopen(filename, "rb");
+
         u_char *buffer;
+
+        // Allocate space for a single byte in the buffer
+        buffer = (u_char *)malloc(sizeof(byte));
+
         // Preload the first byte of the buffer with a null byte
-        u_char *nullByte = (u_char *)"\0";
         buffer[0] = *nullByte;
 
         if (f == NULL)
@@ -72,7 +76,7 @@ public:
 
         // Allocate space to the buffer
         // to store the file's contents
-        buffer = (u_char *)malloc(fsize + 1);
+        buffer = (u_char *)malloc((fsize + 1) * sizeof(buffer));
 
         // Read the file to the buffer
         fread(buffer, fsize, 1, f);
@@ -87,7 +91,10 @@ public:
         return (buffer);
     }
 
-    // Load an instruction from the file's buffer to the
+    // In-future update "instruction" loading titles to specify
+    //the loading of a byte instead of only instructions
+
+    // Load an instruction or from the file's buffer to the
     // instruction register
     // In-future possibly update the program counter
     // here
@@ -97,6 +104,14 @@ public:
         // address a location
         ulong addressNum = address.to_ulong();
         *instruction_register = buffer[addressNum];
+        *pc_register = byte(pc_register->to_ulong() + 1);
+    }
+
+    // Load the next instruction or byte by use of the load_instruction function
+    void load_next_instruction(u_char *buffer)
+    {
+
+        load_instruction(*pc_register, buffer);
     }
 
     // Read byte from address to destination register
