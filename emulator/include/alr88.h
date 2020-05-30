@@ -96,8 +96,6 @@ public:
 
     // Load an instruction or from the file's buffer to the
     // instruction register
-    // In-future possibly update the program counter
-    // here
     void load_instruction(byte address, u_char *buffer)
     {
         // A byte type (see types.h) cannot be used to
