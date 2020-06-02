@@ -11,6 +11,9 @@ static byte *memory = NULL;
 typedef class alr88
 {
 public:
+    byte *ROM = (byte *)malloc(byte("11111111").to_ulong() * sizeof(byte));
+    byte *RAM = (byte *)malloc(byte("11111111").to_ulong() * sizeof(byte));
+
     // Define registers and allocate memory for them
     byte *a_register = (byte *)malloc(sizeof(byte));           // General purpose a register / accumulator
     byte *b_register = (byte *)malloc(sizeof(byte));           // General purpose b register
@@ -23,8 +26,6 @@ public:
     // Constructor to initialize values and allocate memory
     alr88()
     {
-        // Allocate memory
-        memory = (byte *)malloc(MEMORY_SIZE);
         // Future plans for the implementation of RAM and RAM banks
         // and the basic handling of a MBC
         // Intialize values
