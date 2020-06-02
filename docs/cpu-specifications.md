@@ -11,16 +11,16 @@
 
 ## Explain it further?
 
-* A 8-bit CPU with 4 Bit Addressing
+* A 8-bit CPU with 8-bit addressing
 
 ## 8 Bits?
 
 * 8 bits or 1 byte is used to store information, the least value possible to represent in storage would be hex 0x00, the largest value representing hex 0xFF. That being values 0 to 255. Values are stored in unsigned bytes.
 
-## 4 Bit Addressing?
+## 8 Bit Addressing?
 
-* 4 bit addressing signifies there are storage locations hex 0x0 to hex 0xF.
-* This allows for 15 possible 1 byte memory locations, 120 bits of memory or 15 bytes.
+* 8 bit addressing signifies there are storage locations hex 0x0 to hex 0xFF.
+* This allows for 255 possible 1 byte memory locations, 2040 bits of memory or 255 bytes.
 
 ## Notes
 
